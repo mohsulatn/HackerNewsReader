@@ -1,0 +1,16 @@
+{
+  "name": "HackerNewsReader",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "react-native start"
+  },
+  "dependencies": {
+    "lodash": "4.15.0",
+    "moment": "2.14.1",
+    "react": "15.3.0",
+    "react-native": "0.31.0",
+    "react-native-button": "1.6.0",
+    "react-native-gifted-spinner": "0.1.0"
+  }
+}
