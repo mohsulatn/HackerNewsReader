@@ -42,7 +42,19 @@ var NewsList = React.createClass({
                     <View style={styles.header_item}>
                         <Text style={styles.header_text}>{this.state.title}</Text>
                     </View>
-                    
+                    <View style={styles.header_item}>
+                    {  !this.state.loaded &&
+                        <GiftedSpinner />
+                    }
+                    </View>
+                </View>
+                <View style={styles.body}>
+                    <ScrollView ref="scrollView">
+                    {
+                        this.state.loaded &&
+                        <ListView initialListSize={1} dataSource={this.state.news} style={styles.news} renderRow={this.renderNews}></ListView>
+                    }
+                    </ScrollView>
                 </View>
             </View>
         );
